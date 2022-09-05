@@ -99,8 +99,8 @@ class _FirstScreenState extends State<FirstScreen> {
               const SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  KmoneyBtn(
+                children: [
+                  const KmoneyBtn(
                     color: Color.fromARGB(255, 107, 172, 109),
                     label: 'Add Money',
                     prefix: CircleAvatar(
@@ -113,11 +113,12 @@ class _FirstScreenState extends State<FirstScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(width: 15),
+                  const SizedBox(width: 15),
                   KmoneyBtn(
-                    color: Color.fromARGB(255, 117, 104, 196),
+                    color: const Color.fromARGB(255, 117, 104, 196),
                     label: 'Send Money',
-                    prefix: Icon(Icons.send, color: Colors.white),
+                    prefix: Image.asset('images/aero.png',
+                        height: 30, color: Colors.white),
                   )
                 ],
               ),
